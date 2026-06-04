@@ -15,6 +15,8 @@
   --about-text: #f5efff;
   --about-accent: #8a3cff;
   --about-accent-2: #df74ff;
+  --muted-text-2: #e9bbe8;
+
 }
 
 .about-container {
@@ -28,7 +30,8 @@
 }
 
 .about-container-2 {
-  padding: 0 10px;
+  padding: 0 30px;
+  justify-content: flex-start;
 }
 .about-grid {
   display: grid;
@@ -83,6 +86,25 @@
   border: 5px solid var(--about-accent-2);
 }
 
+/* About Text Variant 2 */
+
+.about-text-2 h2 {
+  font-family: "Clash Display", serif;
+  font-size: 48px;
+  padding: 0 20px;
+  border: 2px solid var(--about-accent-2);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 80px #df74ff59;
+}
+
+.about-text-2 h2 span {
+  color: var(--about-accent-2);
+}
+
+.about-text-2 p {
+  color: var(--muted-text-2);
+}
 
 /* ------------ */
 /*  Container 2 */
@@ -90,9 +112,9 @@
 
 .about-image-2 img {
   display: flex;
-  width: 100%;
+  width: 650px;
   height: 650px;
-  border-radius: 50% 0 0 50%;
+  border-radius: 25%;
   box-shadow: 0 0 100px #df74ff59;
   border: 5px solid var(--about-accent);
 }
