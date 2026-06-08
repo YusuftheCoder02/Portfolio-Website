@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+p#size-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+p#size-container select {
+  margin-top: 10px;
+  width: 200px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+p#toppings,
+p#PickuporDelivery {
+  font-size: 1.2rem;
+  margin: 20px 0 0 20px;
+}
+
+small {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 20px 0 0 20px;
+  display: block;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+p#output {
+  font-size: 1.5rem;
+  margin: 20px;
+  color: #333;
+}

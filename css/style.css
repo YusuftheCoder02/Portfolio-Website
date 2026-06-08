@@ -323,3 +323,15 @@ footer #linkedin:hover {
 footer #mail:hover {
   color: #ff9a9a;
 }
+
+footer #github-link:hover {
+  color: #4e4e4e;
+}
+
+footer #linkedin-link:hover {
+  color: #0077b5;
+}
+
+footer #mail-link:hover {
+  color: #ff9a9a;
+}

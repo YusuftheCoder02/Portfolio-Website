@@ -1,0 +1,20 @@
+:root {
+    --projects-bg-main: #090313;
+    --projects-bg-section: #12071F;
+    --projects-bg-card: #180A2B;
+    --projects-bg-card-dark: #0F061A;
+
+    --projects-accent: #E879F9;
+    --projects-accent-bright: #F0ABFC;
+    --projects-accent-dark: #A21CAF;
+
+    --projects-border: #A21CAF;
+    --projects-border-soft: #3B164D;
+
+    --projects-text-main: #FAF5FF;
+    --projects-text-muted: #D8B4FE;
+    --projects-text-soft: #C084FC;
+
+    --projects-icon: #FFFFFF;
+}
+

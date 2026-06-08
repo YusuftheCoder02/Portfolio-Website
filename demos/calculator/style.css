@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(210, 210, 210);
+  align-items: center;
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px;
+  min-width: 80vh;
+  background-color: #b3b3b3;
+  border: 1px solid black;
+  padding: 55px;
+  border-radius: 15px;
+}
+.caption {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.equation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+.equation input {
+  background-color: white;
+  border: white 2px solid;
+  color: black;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#sign,
+#answer,
+#equals {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+#sign {
+  width: 25px;
+}
+
+#answer {
+  min-width: 120px;
+  width: 120px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons button {
+  background-color: #c6c6c6;
+  color: black;
+  border-radius: 15px;
+  border: 1px solid white;
+  padding: 25px;
+}
+
+button#add:hover {
+  background: rgb(191, 255, 183);
+  color: rgb(33, 56, 21);
+  cursor: pointer;
+}
+button#subtract:hover {
+  background: #ffb7b7;
+  color: #381515;
+  cursor: pointer;
+}
+button#multiply:hover {
+  background: #fffab7;
+  color: #343815;
+  cursor: pointer;
+}
+button#divide:hover {
+  background: #b7fffe;
+  color: #153838;
+  cursor: pointer;
+}
+button#clear:hover {
+  background: #ffb7f5;
+  color: #381533;
+  cursor: pointer;
+}
