@@ -104,6 +104,8 @@
     background-color: var(--bg-section);
     border-radius: 20px;
     border: 1px solid var(--accent-purple);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
 }
 
 .current-skills:hover {
@@ -163,13 +165,13 @@
 .skill-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 12px;
     padding: 16px;
     background-color: var(--bg-card-dark);
     border-radius: 12px;
     border: 1px solid var(--accent-purple-dark);
     text-align: center;
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
     cursor: default;
 }
 
@@ -245,3 +247,94 @@
     box-shadow: 0 0 10px #333;
 }
 
+/* -------------- */
+/* SKILLS SIDEBAR */
+/* -------------- */
+
+.skills-sidebar {
+    display: grid;
+    gap: 20px;
+}
+
+.currently-learning,
+.tools,
+.soft-skills {
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr;
+    padding: 20px;
+    background-color: var(--bg-section);
+    border-radius: 20px;
+    border: 1px solid var(--accent-purple);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.currently-learning:hover,
+.tools:hover,
+.soft-skills:hover {
+    border-color: var(--accent-purple-bright);
+    background-color: var(--bg-card);
+}
+
+.sidebar-introduction {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.sidebar-logo {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    font-size: 26px;
+    padding: 12px;
+    background-color: #2A0E4D;
+    border: #8B3FE6 solid 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-text {
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+}
+
+.sidebar-text p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Side Skills */
+
+.side-skills {
+    display: grid;
+}
+
+.side-skill {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 22px;
+    padding: 12px;
+    border-bottom: 1px solid var(--border-purple);
+}
+
+.side-skill i {
+    color: var(--icon-white);
+    font-size: 45px;
+}
+
+.side-skill p {
+    color: var(--text-muted);
+    font-size: 14px;
+    text-align: right;
+}
+
+.side-skill h3 {
+    text-align: right;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}

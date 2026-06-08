@@ -51,7 +51,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  background-color: #15111fe0;
+  background-color: #15111f;
+  z-index: 1000;
 }
 
 nav .nav-links {
