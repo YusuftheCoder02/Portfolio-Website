@@ -1,6 +1,6 @@
-# IT 130 - Final Project - Portfolio Website
+# Personal Portfolio Website
 
-A personal portfolio website built with HTML and CSS for my IT 130 class at DePaul University.
+A personal portfolio website to showcase my projects and skills, built with HTML and CSS.
 
 ## Pages
 - Home
