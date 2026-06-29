@@ -12,6 +12,7 @@
 
     /* Borders and glow */
     --border-purple: #a855f773;
+    --border-purple-dark: #64219f;
     --border-soft: #ffffff14;
     --glow-purple: #a855f747;
 
@@ -37,7 +38,7 @@
 
 .projects-main {
     display: grid;
-    border-right: 2px solid var(--border-soft);
+    border-right: 5px solid var(--border-soft);
     padding-right: 10px;
 }
 
@@ -293,7 +294,7 @@
 
 .projects-sidebar {
     display: grid;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 .projects-sidebar-grid {
@@ -349,4 +350,61 @@
     font-size: 25px;
     font-family: 'Satoshi Variable', sans-serif;
     color: var(--text-main);
+}
+
+.project-stats-cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.project-stat-card {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--border-purple);
+    padding: 15px;
+}
+
+.project-stat-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    width: 100%;
+    gap: 15px;
+}
+
+.project-stat-icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    height: 50px;
+    aspect-ratio: 1 / 1;
+}
+
+.project-stat-card h2 {
+    display: flex;
+    text-align: start;
+    color: #ff12f7;
+    font-size: 35px;
+    align-items: center;
+    padding-right: 15px;
+    justify-content: flex-start;
+    font-family: 'Satoshi Variable', sans-serif;
+    border-right: 2px solid var(--border-purple-dark);
+}
+
+.project-stat-intro {
+    text-align: start;
+    color: var(--text-muted);
+    font-size: 18px;
+    font-family: 'Satoshi Variable', sans-serif;
+}
+
+.link-buttons {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    text-align: center;
 }
