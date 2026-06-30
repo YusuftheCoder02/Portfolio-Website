@@ -1,0 +1,59 @@
+:root {
+  --bg-main: #070912;
+  --bg-section: #0b0e1a;
+  --bg-card: #101522;
+  --bg-card-soft: #141827;
+
+  --purple-main: #a855f7;
+  --purple-light: #c084fc;
+  --purple-dark: #7e22ce;
+  --purple-glow: rgba(168, 85, 247, 0.35);
+
+  --text-main: #ffffff;
+  --text-soft: #d1d5db;
+  --text-muted: #9ca3af;
+
+  --border-main: #2a3142;
+  --border-purple: #7e22ce;
+
+  --button-gradient: linear-gradient(135deg, #8b5cf6, #c084fc);
+  --card-gradient: linear-gradient(145deg, #101522, #090b14);
+
+  --shadow-soft: 0 0 25px rgba(168, 85, 247, 0.15);
+}
+
+.resume-container {
+    margin: 25px 0 auto;
+    background-color: var(--bg-main);
+    height: 100vh;
+    padding: 40px 20px;
+}
+
+.resume-grid {
+    display: grid;
+    height: 100%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.resume {
+    background-color: var(--card-gradient);
+    border: 1px solid var(--border-main);
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.resume:hover {
+    box-shadow: var(--shadow-soft);
+    background-color: var(--bg-card);
+    border-color: var(--border-purple);
+}
+
+.resume-label {
+    padding-bottom: 20px;
+}
