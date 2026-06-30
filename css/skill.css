@@ -4,6 +4,7 @@
     --bg-section: #0d061c;
     --bg-card: #140a2a;
     --bg-card-dark: #0f071f;
+    --card-gradient: linear-gradient(145deg, #101522, #090b14);
 
     /* Purple accents */
     --accent-purple: #a855f7;
@@ -11,7 +12,8 @@
     --accent-purple-dark: #7e22ce;
 
     /* Borders and glow */
-    --border-purple: #a855f773;
+    --border-main: #2a3142;
+    --border-purple: #7e22ce;
     --border-soft: #ffffff14;
     --glow-purple: #a855f747;
 
@@ -102,15 +104,15 @@
     display: flex;
     flex-grow: 1;
     padding: 20px;
-    background-color: var(--bg-section);
+    background-color: var(--card-gradient);
     border-radius: 20px;
-    border: 1px solid var(--accent-purple);
+    border: 1px solid var(--border-main);
     transition: background-color 0.3s ease, border-color 0.3s ease;
 
 }
 
 .current-skills:hover {
-    border-color: var(--accent-purple-bright);
+    border-color: var(--border-purple);
     background-color: var(--bg-card);
 }
 
@@ -234,16 +236,16 @@
     height: 100%;
     grid-template-rows: auto 1fr;
     padding: 20px;
-    background-color: var(--bg-section);
+    background-color: var(--card-gradient);
     border-radius: 20px;
-    border: 1px solid var(--accent-purple);
+    border: 1px solid var(--border-main);
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .currently-learning:hover,
 .tools:hover,
 .soft-skills:hover {
-    border-color: var(--accent-purple-bright);
+    border-color: var(--border-purple);
     background-color: var(--bg-card);
 }
 
