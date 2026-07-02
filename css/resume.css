@@ -1,31 +1,31 @@
 :root {
-  --bg-main: #070912;
-  --bg-section: #0b0e1a;
-  --bg-card: #101522;
-  --bg-card-soft: #141827;
+    --bg-main: #070912;
+    --bg-section: #0b0e1a;
+    --bg-card: #101522;
+    --bg-card-soft: #141827;
 
-  --purple-main: #a855f7;
-  --purple-light: #c084fc;
-  --purple-dark: #7e22ce;
-  --purple-glow: rgba(168, 85, 247, 0.35);
+    --purple-main: #a855f7;
+    --purple-light: #c084fc;
+    --purple-dark: #7e22ce;
+    --purple-glow: rgba(168, 85, 247, 0.35);
 
-  --text-main: #ffffff;
-  --text-soft: #d1d5db;
-  --text-muted: #9ca3af;
+    --text-main: #ffffff;
+    --text-soft: #a78bfa;
+    --text-muted: #9ca3af;
 
-  --border-main: #2a3142;
-  --border-purple: #7e22ce;
+    --border-main: #2a3142;
+    --border-purple: #7e22ce;
 
-  --button-gradient: linear-gradient(135deg, #8b5cf6, #c084fc);
-  --card-gradient: linear-gradient(145deg, #101522, #090b14);
+    --button-gradient: linear-gradient(135deg, #8b5cf6, #c084fc);
+    --card-gradient: linear-gradient(145deg, #101522, #090b14);
 
-  --shadow-soft: 0 0 25px rgba(168, 85, 247, 0.15);
+    --shadow-soft: 0 0 25px rgba(168, 85, 247, 0.15);
 }
 
 .resume-container {
     margin: 25px 0 auto;
     background-color: var(--bg-main);
-    height: 100vh;
+    height: 100%;
     padding: 40px 20px;
 }
 
@@ -34,18 +34,24 @@
     height: 100%;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
+    
 }
+
+.resume-flex-left, .resume-flex-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
 
 .resume {
     background-color: var(--card-gradient);
     border: 1px solid var(--border-main);
     transition: all 0.3s ease-in-out;
-    height: 100%;
     border-radius: 10px;
-    padding: 10px;
-    
+    padding: 20px;
+
 }
 
 .resume:hover {
@@ -54,6 +60,60 @@
     border-color: var(--border-purple);
 }
 
+.resume-hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+}
+
 .resume-label {
     padding-bottom: 20px;
+}
+
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.section-label span {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    color: #C084FC;
+}
+
+.label-line {
+    width: 70px;
+    height: 2px;
+    background: #A855F7;
+    border-radius: 20px;
+}
+
+.resume-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-family: 'Satoshi Variable', sans-serif;
+    color: var(--text-main);
+}
+
+.resume-hero h1 span {
+    color: var(--purple-main);
+}
+
+.resume-hero p {
+    text-align: start;
+    font-size: 1.125rem;
+    color: var(--text-soft);
+    line-height: 1.6;
+}
+
+.resume-hero .link-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px 0;
 }

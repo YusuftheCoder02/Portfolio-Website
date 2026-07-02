@@ -11,6 +11,7 @@
     --accent-purple-dark: #7e22ce;
 
     /* Borders and glow */
+    --border-main: #a855f7;
     --border-purple: #a855f773;
     --border-purple-dark: #64219f;
     --border-soft: #ffffff14;
@@ -23,6 +24,8 @@
 
     /* Icons */
     --icon-white: #ffffff;
+    --card-gradient-purple: linear-gradient(135deg, #8d1cef, #a855f7);
+    --card-gradient: linear-gradient(145deg, #101522, #090b14);
 }
 
 .projects-container {
@@ -107,8 +110,8 @@
 }
 
 .top-card {
-    background-color: var(--bg-section);
-    border: 2px solid var(--border-purple);
+    background-color: var(--card-gradient);
+    border: 2px solid var(--border-main);
     border-radius: 10px;
     padding: 15px;
     transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -116,6 +119,7 @@
 
 .top-project {
     display: flex;
+    height: 100%;
     align-items: center;
     padding: 15px 40px;
     border-radius: 10px;
@@ -177,6 +181,7 @@
     color: var(--text-muted);
     transition: color 0.3s ease;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .view-code-button:hover {
@@ -205,6 +210,7 @@
     color: var(--text-muted);
     transition: color 0.3s ease;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .live-demo-button:hover {
@@ -227,8 +233,8 @@
 
 .Project-2,
 .Project-3 {
-    background-color: var(--bg-section);
-    border: 2px solid var(--border-purple);
+    background-color: var(--card-gradient);
+    border: 2px solid var(--border-main);
     border-radius: 10px;
     padding: 15px;
     transition: background-color 0.3s ease, border-color 0.3s ease;
