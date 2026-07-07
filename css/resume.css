@@ -229,3 +229,75 @@
     padding-bottom: 10px;
     border-bottom: 1px solid var(--border-main);
 }
+
+/* FLEX ITEM 3 */
+
+.resume-label-caption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-purple);
+}
+
+.resume-label-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.resume-label-caption i {
+    font-size: 2rem;
+    border: 2px solid var(--border-purple);
+    padding: 15px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    color: var(--purple-main);
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-label-info h2 {
+    font-size: 2.2rem;
+    font-family: 'Satoshi Variable', sans-serif;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.resume-label-info p {
+    font-size: 1rem;
+    color: var(--text-soft);
+}
+
+.resume-label-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume-label-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    text-decoration: none;
+    margin-left: 50px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-label-link i {
+    font-size: 1.2rem;
+    color: var(--purple-main);
+    width: 30px;
+    aspect-ratio: 1/1;      /* Ensures the icon is a perfect square */
+}
+
+.resume-label-link p {
+    margin-left: 20px;
+
+}
