@@ -119,6 +119,16 @@
     margin: 10px 0;
 }
 
+.github-button i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.github-button {
+    border-color: var(--border-main);
+}
+
+
 /* FLEX ITEM 2 */
 
 .resume-caption {
@@ -195,3 +205,27 @@
     cursor: default;
 }
 
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 20px;
+}
+
+.experience-list ul {
+    color: var(--text-soft);
+    margin-bottom: 10px;
+}
+
+.experience-list ul li::marker {
+    color: var(--text-soft);
+}
+
+.experience-list p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-main);
+}
