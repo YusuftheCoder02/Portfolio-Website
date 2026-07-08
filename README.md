@@ -8,7 +8,6 @@ A personal portfolio website to showcase my projects and skills, built with HTML
 - Skills
 - Projects
 - Resume
-- Contact
 
 ## Status
 100% Complete
