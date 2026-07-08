@@ -44,6 +44,14 @@
     gap: 20px;
 }
 
+.resume-flex-right {
+    height: 100%;
+}
+
+.resume-flex-left {
+    height: 100%;
+}
+
 
 
 .resume {
@@ -59,6 +67,12 @@
     box-shadow: var(--shadow-soft);
     background-color: var(--bg-card);
     border-color: var(--border-purple);
+}
+
+.resume-hero-label,
+.resume-download,
+.resume-skills {
+    border-color: var(--border-main);
 }
 
 .resume-hero {
@@ -126,6 +140,10 @@
 
 .github-button {
     border-color: var(--border-main);
+}
+
+.linkedin-button {
+    border-color: #0A66C2;
 }
 
 
@@ -212,6 +230,16 @@
     margin: 25px 20px;
 }
 
+.resume-experience {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.resume-experience .experience-list {
+    flex: 1;
+}
+
 .experience-list ul {
     color: var(--text-soft);
     margin-bottom: 10px;
@@ -262,7 +290,7 @@
 
 .resume-label-info h2 {
     font-size: 2.2rem;
-    font-family: 'Satoshi Variable', sans-serif;
+    font-family: 'Clash Display', sans-serif;
     color: var(--text-main);
     font-weight: 600;
 }
@@ -276,6 +304,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid var(--border-main);
 }
 
 .resume-label-link {
@@ -291,13 +321,150 @@
 }
 
 .resume-label-link i {
-    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
     color: var(--purple-main);
     width: 30px;
     aspect-ratio: 1/1;      /* Ensures the icon is a perfect square */
 }
 
 .resume-label-link p {
-    margin-left: 20px;
+    font-size: 1rem;
+    font-family: 'Satoshi Variable', sans-serif;
+    margin-left: 10px;
 
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+}
+
+/* FLEX ITEM 5 */
+
+.resume-download-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--bg-card-soft);
+    border: 1px solid var(--border-main);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-download-box:hover {
+    box-shadow: var(--shadow-soft);
+    border-color: var(--border-purple);
+    background-color: #7e22ce3d;
+}
+
+.fa-file { /* accessibility icon for file download */
+    font-size: 2.5rem;
+    color: var(--purple-main);
+}
+
+.resume-download-box h3 {
+    font-size: 1.8rem;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.resume-download-box p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.resume-download-box a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--text-main);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--bg-card-soft);
+    border: 1px solid var(--border-purple);
+    box-shadow: none;
+    transform: translateY(0);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.resume-download-box a:hover {
+    background-color: var(--purple-dark);
+    box-shadow: var(--shadow-soft);
+    transform: translateY(-2px);
+}
+
+/* FLEX ITEM 6 */
+
+.dev-notes-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(126, 34, 206, 0.2), rgba(20, 24, 39, 0.95));
+    border: 1px solid var(--border-main);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
+}
+
+.dev-notes {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Only used AI here because styling same boxes went repetitive, so reused the same styling for dev-notes-content */
+
+.dev-notes-content {
+    flex: 1;
+}
+
+.dev-notes-content:hover {
+    border-color: var(--border-purple);
+    box-shadow: var(--shadow-soft);
+    transform: translateY(-2px);
+}
+
+.dev-notes-content p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--text-soft);
+    cursor: default;
+}
+
+.dev-notes-content i {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border-purple);
+    color: var(--purple-light);
+    background-color: rgba(126, 34, 206, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease;
+}
+
+.dev-notes-content:hover i {
+    background-color: var(--purple-dark);
+    color: var(--text-main);
 }
