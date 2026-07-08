@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A personal portfolio website to showcase my projects and skills, built with HTML and CSS.
+A personal portfolio website to showcase my projects and skills, built with HTML and CSS. My first official project in software development.
 
 ## Pages
 - Home
@@ -11,4 +11,7 @@ A personal portfolio website to showcase my projects and skills, built with HTML
 - Contact
 
 ## Status
-In Progress - The Project is not yet complete.
+100% Complete
+
+## Future Plans
+Make the v1.2 of this portfolio better after learning React, Responsive Layouts and SQL
